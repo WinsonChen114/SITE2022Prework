@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Light and Sound Memory Game
+    </h1>
+    
+    <p>
+      Welcome to the game! Repeat the pattern by pressing the buttons in the order they light up!
+    </p>
+    
+    <p id = "health">
+      Health: 3
+    </p>
+    
+    <p id = "time">
+      Time Left: 10 seconds
+    </p>
+    
+    <button id = "startBtn" onclick = "startGame()">
+      Start
+    </button>
+    <button id = "stopBtn" class = "hidden" onclick = "stopGame()">
+      End
+    </button>
+    
+    <div id = "gameButtonArea">
+      <button id = "button1" onclick="guess(1)" onmousedown = "mouseDown(1)" onmouseup = "mouseUp(1)">
+        <img src = "https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Apple.png?v=1648046437227" id = "image1" class = "hidden"/>
+      </button>
+      <button id = "button2" onclick="guess(2)" onmousedown = "mouseDown(2)" onmouseup = "mouseUp(2)">
+        <img src = "https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Orange.png?v=1648046436770" id = "image2" class = "hidden" height = "150" width = "150"/>
+      </button>
+      <button id = "button3" onclick="guess(3)" onmousedown = "mouseDown(3)" onmouseup = "mouseUp(3)">
+        <img src = "https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Banana.png?v=1648046436627" id = "image3" class = "hidden"/>
+      </button>
+      <button id = "button4" onclick="guess(4)" onmousedown = "mouseDown(4)" onmouseup = "mouseUp(4)">
+        <img src = "https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Kiwi.png?v=1648046437125" id = "image4" class = "hidden"/>
+      </button>
+      <button id = "button5" onclick="guess(5)" onmousedown = "mouseDown(5)" onmouseup = "mouseUp(5)">
+        <img src = "https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Blueberry.png?v=1648046436892" id = "image5" class = "hidden"/>
+      </button>
+      <button id = "button6" onclick="guess(6)" onmousedown = "mouseDown(6)" onmouseup = "mouseUp(6)">
+        <img src = "https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Grape.png?v=1648053530793" id = "image6" class = "hidden"/>
+      </button>
+      <button id = "button7" onclick="guess(7)" onmousedown = "mouseDown(7)" onmouseup = "mouseUp(7)">
+        <img src = "https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Coconut.png?v=1648046436996" id = "image7" class = "hidden"/>
+      </button>
+    </div>
+    
+    <div id = "audioArea">
+      <audio src="https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Apple.mp3?v=1648202205492" id="Audio1"></audio>
+      <audio src="https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Orange.mp3?v=1648202518956" id="Audio2"></audio>
+      <audio src="https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Banana.mp3?v=1648203020719" id="Audio3"></audio>
+      <audio src="https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Kiwi.mp3?v=1648203338780" id="Audio4"></audio>
+      <audio src="https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Blueberry.mp3?v=1648202062146" id="Audio5"></audio>
+      <audio src="https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Grape.mp3?v=1648201102185" id="Audio6"></audio>
+      <audio src="https://cdn.glitch.global/2b2f8e44-ae9c-4a26-a83c-3222efb2fb9c/Coconut.mp3?v=1648200826975" id="Audio7"></audio>
+    </div>
+    
+    </body>
+</html>
