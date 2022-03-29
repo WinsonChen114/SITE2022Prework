@@ -1,0 +1,105 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: powderblue;
+  color: saddlebrown;
+}
+
+button {
+  padding: 14px;
+  border-radius: 15px;
+}
+
+#button1 {
+  background: pink;
+}
+#button1:active,
+#button1.lit {
+  background: red;
+}
+
+#button2 {
+  background: moccasin;
+}
+#button2:active,
+#button2.lit {
+  background: orange;
+}
+
+#button3 {
+  background: lightyellow;
+}
+#button3:active,
+#button3.lit {
+  background: yellow;
+}
+
+#button4 {
+  background: palegreen;
+}
+#button4:active,
+#button4.lit {
+  background: green;
+}
+
+#button5 {
+  background: skyblue;
+}
+#button5:active,
+#button5.lit {
+  background: blue;
+}
+
+#button6 {
+  background: violet;
+}
+#button6:active,
+#button6.lit {
+  background: indigo;
+}
+
+#button7 {
+  background: white;
+}
+#button7:active,
+#button7.lit {
+  background: black;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+  color: dimgray;
+}
+
+.hidden {
+  display: none;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
